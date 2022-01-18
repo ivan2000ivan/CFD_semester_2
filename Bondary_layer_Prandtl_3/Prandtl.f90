@@ -37,7 +37,7 @@
 		do i = 2, NI 
 			Sp = 0
 			P(i, :) = P(i - 1, :)
-			!R(i, :) = (P(i, :) / Const)**(1.0/1.4)
+			R(i, :) = (P(i, :) / Const)**(1.0/1.4)
 			U(i, :) = U(i - 1, :)
 			V(i, :) = V(i - 1, :)
 			e_P = 1
@@ -97,7 +97,7 @@
 				do j = 1, NJ
 					betta = -G(i) / (R(i, j) * H**2)
 					P(i, j) = P(i, j) + betta * (G(i - 1) - G(i))
-					!R(i, j) = (P(i, j) / Const)**(1.0/1.4)
+					R(i, j) = (P(i, j) / Const)**(1.0/1.4)
 				enddo
 				print*, i, P(i, 5), R(i, 5), G(i), betta * (G(i - 1) - G(i))
 				!pause
