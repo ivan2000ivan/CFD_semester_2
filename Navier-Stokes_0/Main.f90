@@ -107,9 +107,9 @@
 			U_n(I, J) = (U_c(I-1, J-1) + U_c(I-1, J) + U_c(I, J-1) + U_c(I, J)) / 4.0
 			V_n(I, J) = (V_c(I-1, J-1) + V_c(I-1, J) + V_c(I, J-1) + V_c(I, J)) / 4.0
 			P_n(I, J) = (P_c(I-1, J-1) + P_c(I-1, J) + P_c(I, J-1) + P_c(I, J)) / 4.0
-			print*, U_n(I,J)
+			!print*, U_n(I,J)
           ENDDO
-		  print*, ""
+		  !print*, ""
         ENDDO
 		
 		do i = 1, NI
@@ -120,7 +120,7 @@
 			enddo
 			Cf(i) = 2 * Cf(i) / (R0 * (Umax)**2)
 			Cf_B(I) = 0.664 / sqrt(U0 * X_Node(I, 1) / NU)
-			print*, Umax
+			!print*, Umax
 		enddo
                        
  !----------------- Output data ------------------------------

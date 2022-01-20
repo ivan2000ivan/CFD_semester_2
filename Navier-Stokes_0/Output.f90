@@ -22,7 +22,7 @@
          REAL(8),DIMENSION(1:NI,1:NJ):: X,Y
          REAL(8),DIMENSION(1:NI,1:NJ):: U,V,P
 		 
-		 print*, U
+		 !print*, U
 
          Write(IO,*) 'VARIABLES = "X", "Y", "U", "V", "P"' 
          Write(IO,*) 'ZONE I=',NI,', J=',NJ, ', DATAPACKING=BLOCK'

@@ -99,7 +99,7 @@
 					P(i, j) = P(i, j) + betta * (G(i - 1) - G(i))
 					R(i, j) = (P(i, j) / Const)**(1.0/1.4)
 				enddo
-				print*, i, P(i, 5), R(i, 5), G(i), betta * (G(i - 1) - G(i))
+				!print*, i, P(i, 5), R(i, 5), G(i), betta * (G(i - 1) - G(i))
 				!pause
 				e_P1 = P(i, 1)
 				do j = 2, NJ
